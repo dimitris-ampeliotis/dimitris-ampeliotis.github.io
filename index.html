@@ -2,13 +2,44 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>Homepage of D. Ampeliotis</title>
+	<style type="text/css">
+		.active {
+			background-color: #CCCCCC;
+			text-align: center;
+		}
+		.inactive {
+			background-color: #999999;
+			text-align: center;
+		}
+	</style>
+	<script type="text/javascript">
+		function showactive(thisid){
+			var tablecell = document.getElementById(thisid);
+			tablecell.className="active";
+		}
+		function showinactive(thisid){
+			var tablecell = document.getElementById(thisid);
+			tablecell.className="inactive";		
+		}
+	</script>
 </head>
 <body bgcolor="#EBEBEB">
 <div style="position: absolute; left: 0; right: 0;top:100; width: 100%;background-color:#7b7b7b;height:30px">
 <center>
-<font face="Comic Sans MS" onclick="document.getElementById('pubs').style.display='none';document.getElementById('cit').style.display='none';document.getElementById('home').style.display='block';">[HOME]</font>
-<font face="Comic Sans MS" onclick="document.getElementById('pubs').style.display='block';document.getElementById('cit').style.display='none';document.getElementById('home').style.display='none';">[PUBLICATIONS]</font>
-<font face="Comic Sans MS" onclick="document.getElementById('pubs').style.display='none';document.getElementById('cit').style.display='block';document.getElementById('home').style.display='none';">[CITATIONS]</font>
+<font face="Comic Sans MS" size="4">
+<TABLE BORDER="1" cellpadding="0" cellspacing="2"> 
+<TR>
+<TD width="100" align="center" class="active"   id="home">Home</TD>
+<TD width="100" align="center" class="inactive" id="shortcv" onmouseover="showactive('shortcv')" onmouseout="showinactive('shortcv')" onclick="location.href='shortcv.html';">Short CV</TD>
+<TD width="100" align="center" class="inactive" id="research"  onmouseover="showactive('research')" onmouseout="showinactive('research')" onclick="location.href='research.html';">Research</TD>
+<TD width="100" align="center" class="inactive" id="students"  onmouseover="showactive('students')" onmouseout="showinactive('students')" onclick="location.href='students.html';">Students</TD>
+<TD width="100" align="center" class="inactive" id="publications"  onmouseover="showactive('publications')" onmouseout="showinactive('publications')" onclick="location.href='publications.html';">Publications</TD>
+<TD width="100" align="center" class="inactive" id="teaching"  onmouseover="showactive('teaching')" onmouseout="showinactive('teaching')" onclick="location.href='teaching.html';">Teaching</TD>
+<TD width="100" align="center" class="inactive" id="software"  onmouseover="showactive('software')" onmouseout="showinactive('software')" onclick="location.href='software.html';">Software</TD>
+<TD width="100" align="center" class="inactive" id="contact"  onmouseover="showactive('contact')" onmouseout="showinactive('contact')" onclick="location.href='contact.html';">Contact</TD>
+</TR>
+</TABLE>
+</font>
 </center>
 </div>
 <div style="position: absolute; left: 0; right: 0;top:130; width: 100%;background-color:#9c9c9c;height:1px"></div>
@@ -91,67 +122,76 @@
 <div style="position: absolute; left: 0; right: 0;top:207; width: 100%;background-color:#e9e9e9;height:1px"></div>
 <div style="position: absolute; left: 0; right: 0;top:208; width: 100%;background-color:#eaeaea;height:1px"></div>
 <div style="position: absolute; left: 0; right: 0;top:209; width: 100%;background-color:#ebebeb;height:1px"></div>
-<div style="position: absolute; top: 62; left: 10%; width: 80%;">
-<font face="Comic Sans MS" size="6">Dimitris Ampeliotis, PhD</font>
+<div style="position: absolute; top: 62; left: 10%; width 80%;">
+<font face="Comic Sans MS" size="6">Dimitris Ampeliotis, Ph.D.</font>
 </div>
 
 
 
 
 <!-- Το αρχικό div με το σύντομο βιογραφικό -->
-<div id="home" style="display: block; position: absolute; top:130;left: 10%; width: 80%;background-color:#FFFFFF;">
-<table border="0" cellpadding="0" cellspacing="0">
-<tr><td><img width = "100" src="img/Ampeliotis.jpg" border="1"></td>
-<td valign="bottom"><font face="Comic Sans MS" size="4"><blockquote>
-<b style="font-size:12pt;">Assistant Professor, <A HREF="https://dmc.ionio.gr/en/">Department of Digital Media and Communication</A>, <A HREF="https://ionio.gr/en/">Ionian University</A>, Greece</b><BR>
-<b style="font-size:12pt;">Collaborating Academic Faculty, <A HREF="https://mips.isi.gr/">Multimedia Information Processing Systems Group</A>, <A HREF="https://www.isi.gr/">Industrial Systems Institute</A></b><BR>
-<b style="font-size:12pt;">Associate Researcher, <A HREF="http://spclab.ceid.upatras.gr/">Signal Processing and Communications Lab</A>, <A HREF="https://www.ceid.upatras.gr/en">Computer Engineering and Informatics Department</A>, <A HREF="https://www.upatras.gr/en/">University of Patras</A></b><BR>
+<div id="home" style="display: block; position: absolute; top:130;left: 10%; width: 80%; background-color:#FFFFFF;">
+<center>
+<table border="0" width="80%"> 
+<tr>
+<td align="center"><img width="150" border="1" src="img/Dimitris_Ampeliotis.jpg"></td>
+<td valign="center" align="center"> 
+<font face="Comic Sans MS" size="4">
+<b style="font-size:12pt;">Assistant Professor,<A HREF="https://dmc.ionio.gr/en/" target="_blank">Department of Digital Media and Communication</A>, <A HREF="https://ionio.gr/en/" target="_blank">Ionian University</A>, Greece</b>
+</font>
+</td>
+</tr>
+</table>
+<table border="0" width="80%">
+<tr>
+<td valign="center" align="left">
+<font face="Comic Sans MS" size="4">
+<blockquote>
+<b>Administrative positions:</b><br>
+<ul>
+<li>Coordinator of the Internal Evaluation Committee for Quality Assurance of the Department</li>
+<li>Coordinator of the Intenship Program of the Department</li>
+<li>Deputy Coordinator of the Erasmus Program of the Department</li>
+</ul>
+<b>Collaborations:</b><br>
+<ul>
+<li><b style="font-size:12pt;">Associate Researcher, <A HREF="http://spclab.ceid.upatras.gr/" target="_blank">Signal Processing and Communications Lab</A>, <A HREF="https://www.ceid.upatras.gr/en" target="_blank">Computer Engineering and Informatics Department</A>, <A HREF="https://www.upatras.gr/en/" target="_blank">University of Patras</A></b>
+<li><b style="font-size:12pt;">Associate Researcher, <A HREF="https://dsip.ece.upatras.gr/" target="_blank">Digital Signal and Image Processing Laboratory</A>, <A HREF="https://www.ece.upatras.gr/index.php/en/" target="_blank">Department of Electrical and Computer Engineering</A>, <A HREF="https://www.upatras.gr/en/" target="_blank">University of Patras</A></b>
+<li><b style="font-size:12pt;">Collaborating Academic Faculty, <A HREF="https://mips.isi.gr/" target="_blank">Multimedia Information Processing Systems Group</A>, <A HREF="https://www.isi.gr/" target="_blank">Industrial Systems Institute</A></b>
+</ul>
 </blockquote>
 </font>
-</td></tr></table>
-<BR>
-<font face="Comic Sans MS" size="4">
-<center>
-<b>Short CV</b>
-<TABLE WIDTH="700">
+</td>
+</tr>
+</table>
 
-<TR><TD ALIGN="RIGHT" VALIGN="TOP"><B>2021-now:</B></TD><TD ALIGN="LEFT">Assistant Professor, Department of Digital Media and Communication, Ionian University, Greece</TD></TR>
-
-<TR><TD ALIGN="RIGHT" VALIGN="TOP"><B>2010-2021:</B></TD><TD ALIGN="LEFT">Post-Doc Researcher, University of Patras / CTI<BR>Adjunct Lecturer, University of Patras<BR>Adjunct Lecturer, TEI of Western Greece.</TD></TR>
-
-<TR><TD ALIGN="RIGHT" VALIGN="TOP"><B>2009-2010:</B></TD><TD ALIGN="LEFT">Military Service</TD></TR>
-
-<TR><TD ALIGN="RIGHT" VALIGN="TOP"><B>2004-2009:</B></TD><TD ALIGN="LEFT"> Ph.D. degree, Computer Engineering & Informatics Department, University of Patras, in the field of Digital Communications & Signal Processing,
-
-under the supervision of <A HREF="http://xanthippi.ceid.upatras.gr/people/berberidis/index.php">Professor Kostas Berberidis</A>
-
-</TD></TR>
-
-<TR><TD ALIGN="RIGHT" VALIGN="TOP"><B>2002-2004:</B></TD><TD ALIGN="LEFT"> M.Sc. degree in  <A HREF="http://xanthippi.ceid.upatras.gr/dsp/">"Signal & Image Processing Systems"</A> (in Greek)</TD></TR>
-
-<TR><TD ALIGN="RIGHT" WIDTH="170" VALIGN="TOP"><B>1997-2002:</B></TD><TD ALIGN="LEFT"> Student of <A HREF="http://www.ceid.upatras.gr/en/">Computer Engineering and Informatics Department</A>, University of Patras, Greece</TD></TR>
-
-<TR><TD ALIGN="RIGHT" VALIGN="TOP"><B>1979-1997:</B></TD><TD ALIGN="LEFT">Born in Athens, raised-up near Kimi, Evia, Greece</TD></TR>
-
-</TABLE>
-<BR>
-<BR>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+	<tr>
+	<td align="center" width="300">
+	<font face="Comic Sans MS" size="2">
+	<b>e-mails:</b>
+	<font>
+	</td>
+	<td></td>
+	<td align="center" width="180">
+	VCARD
+	</td>
+	</tr>
+	<tr>
+	<td align="left">
+	ampeliotis AT ionio DOT gr<BR>ampeliot AT ceid DOT upatras DOT gr<BR>dampeliot AT gmail DOT com</BR>
+	<b>other sites:</b></BR>
+	<a href="https://orcid.org/0000-0002-4138-6152" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">orcid.org/0000-0002-4138-6152</a></BR>
+	<a href="https://scholar.google.gr/citations?user=XhcXJ-cAAAAJ&hl=el&oi=ao" target="_blank">Google Scholar</a></BR>
+	<a href="https://www.researchgate.net/profile/Dimitris_Ampeliotis" target="_blank">Researchgate</a></BR>
+	<a href="https://www.scopus.com/authid/detail.uri?authorId=13408071200" target="_blank">Scopus</a></BR>
+	</font></td>
+	<td></td>
+	<td align="center">
+	<img width="170" src="img/myqr.png">
+	</td></tr></table>
 </center>
-</font>
-<table border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td align="left">
-<font face="Comic Sans MS" size="2">
-<b>e-mails:</b></BR>ampeliotis AT ionio DOT gr<BR>ampeliot AT ceid DOT upatras DOT gr<BR>dampeliot AT gmail DOT com</BR>
-<b>other sites:</b></BR>
-<a href="https://orcid.org/0000-0002-4138-6152" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">orcid.org/0000-0002-4138-6152</a></BR>
-<a href="https://scholar.google.gr/citations?user=XhcXJ-cAAAAJ&hl=el&oi=ao" target="_blank">Google Scholar</a></BR>
-<a href="https://www.researchgate.net/profile/Dimitris_Ampeliotis" target="_blank">Researchgate</a></BR>
-<a href="https://www.scopus.com/authid/detail.uri?authorId=13408071200" target="_blank">Scopus</a></BR>
-</font></td><td align="right">
-VCARD<BR>
-<img width="170" src="img/myqr.png">
-</td></tr></table>
 </div> <!-- to sunoliko tis arxikis selidas -->
-
 
 <!-- Η λίστα με τις δημοσιεύσεις, χωρίς τις αναφορές -->
 <div id="pubs" style="display: none; position: absolute; top:130;left: 10%; width: 80%;background-color:#FFFFFF;">
@@ -361,9 +401,4 @@ H-index is 8
 <BR>
 </font></blockquote></div>
 
-
-
-
-
-</body>
 </html>
